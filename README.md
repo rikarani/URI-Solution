@@ -1,2 +1,1 @@
-# URI-Problem-Solution
-SOLUSI DARI SEMUA MASALAH URI YANG PERNAH SAYA KERJAKAN (BIAR GAK LUPA NTAR)
+https://www.beecrowd.com.br/judge/en
