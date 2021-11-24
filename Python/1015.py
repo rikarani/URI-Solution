@@ -1,4 +1,4 @@
-from math import pow as pangkat, sqrt
+from math import pow as pangkat
 from math import sqrt as akar
 
 var1 = input().split()
