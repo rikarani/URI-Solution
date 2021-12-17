@@ -1,13 +1,18 @@
-A, B, C = list(map(int, input().split()))
+A, B, C = list(map(float, input().split()))
 
 daftarNilai = [A,B,C]
-daftarNilai.sort()
+daftarNilai.sort(reverse=True)
 
-print(daftarNilai[0])
-print(daftarNilai[1])
-print(daftarNilai[2])
+if daftarNilai[0] >= (daftarNilai[1] + daftarNilai[2]) :
+    print("NAO FORMA TRIANGULO")
+elif (daftarNilai[0]**2) == ((daftarNilai[1] ** 2) + (daftarNilai[2] ** 2)) :
+    print("TRIANGULO RETANGULO")
+elif (daftarNilai[0]**2) > ((daftarNilai[1] ** 2) + (daftarNilai[2] ** 2)) :
+    print("TRIANGULO OBTUSANGULO")
+elif (daftarNilai[0]**2) < ((daftarNilai[1] ** 2) + (daftarNilai[2] ** 2)) :
+    print("TRIANGULO ACUTANGULO")
 
-print()
-print(A)
-print(B)
-print(C)
+if (daftarNilai[0] == daftarNilai[1]) and (daftarNilai[1] == daftarNilai[2]) :
+    print("TRIANGULO EQUILATERO")
+elif (daftarNilai[0] == daftarNilai[1]) or (daftarNilai[1] == daftarNilai[2]) :
+    print("TRIANGULO ISOSCELES")
