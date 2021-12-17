@@ -7,11 +7,9 @@ print(f"Media: {'{0:.1f}'.format(media)}")
 
 if media >= 7.0 :
     print("Aluno aprovado.")
-
-if media < 5.0 :
+elif media < 5.0 :
     print("Aluno reprovado.")
-
-if media >= 5.0 and media <= 6.9 :
+elif media >= 5.0 and media <= 6.9 :
     print("Aluno em exame.")
 
     exam = float(input())
